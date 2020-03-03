@@ -1,0 +1,24 @@
+<meta charset=utf-8>
+<script>
+	alert("Hi, Man!");
+	let name = prompt("You name: "); //let используется только один раз для создания переменной, далее просто обращение к ней
+	alert("Good day " + name);
+	alert("Let's calc!");
+	let a = +prompt("Number 1"); //перед prompt определяет тип данных как инт
+	let b = +prompt("Number 2"); //переменная может создаваться через var - устаревшее и const - неизменяемое значение
+	let act = prompt("Action: ");
+	let result;
+	if (act == "*") {
+		result = a*b; //удачно автоматом переведет строки в инты и без плюсов перед prompt
+	}
+	if (act == '+') {
+		result = a+b; //удачно автоматом переведет строки в инты и без плюсов перед prompt
+	}
+	if (act == '-') {
+		result = a-b; //удачно автоматом переведет строки в инты и без плюсов перед prompt
+	}
+	if (act == '/') {
+		result = a/b; //удачно автоматом переведет строки в инты и без плюсов перед prompt
+	}
+	alert(result);
+</script>
